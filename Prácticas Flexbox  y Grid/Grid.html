@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><a id="titulo">Ejemplos de Grid</a></h1>
+    <h2><a href="index.html">Menu Principal</a></h2>
+    <h2><a href="Flexbox.html">Ir a ejemplos de Flexbox</a></h2>
+    <ul>
+    <li><a href="#ejemplo1">Ejemplo 1</a></li>
+    <li><a href="#ejemplo2">Ejemplo 2</a></li>
+    <li><a href="#ejemplo3">Ejemplo 3</a></li>
+    <li><a href="#ejemplo4">Ejemplo 4</a></li>
+    <li><a href="#ejemplo5">Ejemplo 5</a></li>
+    <li><a href="#ejemplo6">Ejemplo 6</a></li>
+    <li><a href="#ejemplo7">Ejemplo 7</a></li>
+    <li><a href="#ejemplo8">Ejemplo 8</a></li>
+    <li><a href="#ejemplo9">Ejemplo 9</a></li>
+    <li><a href="#ejemplo10">Ejemplo 10</a></li>
+    </ul>
+    <hr>
+    <h1 id="ejemplo1">Ejemplo 1</h1>
+    <style>.card{display:flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: row;
+        max-height:100vh;}
+        .cards img {
+        margin: 10px;
+        border: 3px solid #000;
+        box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+        max-width: 23vw;
+      }</style>
+    <main class="cards">
+        <image src="/Prácticas Flexbox  y Grid/img/16959013724520.jpg" alt="Sample photo"></image>
+        <image src="/Prácticas Flexbox  y Grid/img/descargar (1).jpg" alt="Sample photo"></image>
+        <image src="/Prácticas Flexbox  y Grid/img/descargar (2).jpg" alt="Sample photo"></image>
+        <image src="/Prácticas Flexbox  y Grid/img/descargar (3).jpg" alt="Sample photo"></image>
+        <image src="/Prácticas Flexbox  y Grid/img/descargar (4).jpg" alt="Sample photo"></image>
+        <image src="/Prácticas Flexbox  y Grid/img/descargar (5).jpg" alt="Sample photo"></image>
+        <image src="/Prácticas Flexbox  y Grid/img/descargar (6).jpg" alt="Sample photo"></image>
+        <image src="/Prácticas Flexbox  y Grid/img/descargar (7).jpg" alt="Sample photo"></image>
+        <image src="/Prácticas Flexbox  y Grid/img/descargar.jpg" alt="Sample photo"></image>
+        <h3><a href="#titulo">Regresar</h3></a>
+    <hr>
+        <h1 id="ejemplo2">Ejemplo 2</h1>
+        <style>
+        .container {
+            display: flex;
+            height: 300px;
+            justify-content: space-between;
+            flex-direction: column;
+          }
+          .bar { height: 100%; }
+          .bar-1 { width: 40%; background-color: #3498db; }
+          .bar-2 { width: 50%; background-color: #e74c3c; }
+          .bar-3 { width: 60%; background-color: #2ecc71; }
+          .bar-4 { width: 20%; background-color: #f39c12; }
+          .bar-5 { width: 30%; background-color: #9b59b6; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3"></div>
+          <div class="bar bar-4"></div>
+          <div class="bar bar-5"></div>
+        </div>
+        <h3><a href="#titulo">Regresar</h3></a>
+    <hr>
+    <h1 id="ejemplo3">Ejemplo 3</h1>
+    <style>
+        .wrapper {
+          background-color: whitesmoke;
+          list-style-type: none;
+          padding: 0;
+          border-radius: 3px;
+        }
+        .form-row {
+          display: flex;
+          justify-content: flex-end;
+          padding: .5em;
+        }
+        .form-row > label {
+          padding: .5em 1em .5em 0;
+        }
+        .form-row > input {
+          flex: 1;
+        }
+        .form-row > input,
+        .form-row > button {
+          padding: .5em;
+        }
+      </style>
+      <form>
+        <ul class="wrapper">
+          <li class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+          </li>
+          <li class="form-row">
+            <label for="townborn">Town you were born in</label>
+            <input type="text" id="townborn">
+          </li>
+          <li class="form-row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email">
+          </li>
+          <li class="form-row">
+          </li>
+        </ul>
+      </form>
+    </main>
+    <h3><a href="#titulo">Regresar</h3></a>
+<hr>
+<h1 id="ejemplo4">Ejemplo 4</h1>
+<style>
+    .container1 {
+      display: flex;
+      height: 300px;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .item {
+      width: 14%;
+      background-color: #3498db;
+      border: 1px solid #2980b9;
+      box-sizing: border-box;
+    }
+
+    .item-1 { height: 40%; }
+    .item-2 { height: 50%; }
+    .item-3 { height: 60%; }
+    .item-4 { height: 20%; }
+    .item-5 { height: 30%; }
+    </style>
+   <div class="container1">
+    <div class="item item-1"></div>
+    <div class="item item-2"></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+    <div class="item item-5"></div>
+  </div>
+  <h3><a href="#titulo">Regresar</h3></a>
+  <hr>
+  <h1 id="ejemplo5">Ejemplo 5</h1>
+  <style>
+    .container2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .item1 {
+      width: 15%;
+      padding-bottom: 16%;
+      margin-bottom: 2%;
+      background-color: red;
+      border: 1px solid black; 
+      box-sizing: border-box;
+    }
+  </style>
+    <div class="container2">
+    <div class="item1"></div>
+    <div class="item1"></div>
+    <div class="item1"></div>
+    <div class="item1"></div>
+    <div class="item1"></div>
+    <div class="item1"></div>
+    <div class="item1"></div>
+    <div class="item1"></div>
+    </div>
+  <h3><a href="#titulo">Regresar</h3></a>
+  <hr>
+  <h1 id="ejemplo6">Ejemplo 6</h1>
+  <style>
+    .wrapper {
+      display: flex;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    .column > div {
+      font-size: 4vh;
+      color: white;
+      background: royalblue;
+      margin: .1em;
+      padding: .3em 1em;
+      border-radius: 3px;
+      flex: 1;
+    }
+    </style>
+    <div class="wrapper">
+      <div class="column">
+        <div>1</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+      </div>
+      <div class="column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </div>
+  <h3><a href="#titulo">Regresar</h3></a>
+  <hr>
+  <h1 id="ejemplo7">Ejemplo 7</h1>
+  <style>
+  .wrapper1 {
+      display: flex;
+      
+    }
+    .column1 {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .column1 > div {
+      font-size: 3vh;
+      color: white;
+      background: royalblue;
+      margin: .1em;
+      padding: .1em 1em;
+      border-radius: 20px;
+      flex: 2;
+    }
+    </style>
+    <div class="wrapper1">
+      <div class="column1">
+        <div>1</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+      </div>
+      <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+
+    <div class="column1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+      </div>
+    </div>
+    <h3><a href="#titulo">Regresar</h3></a>
+    <hr>
+    <h1 id="ejemplo8">Ejemplo 8</h1>
+    <style>
+        .cards1 {
+          display: flex;
+        }
+        .card1 {
+          flex: 0 0 200px;
+          margin: 10px;
+          border: 1px solid #ccc;
+          box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+        } 
+        .card1 img {
+          max-width: 100%;
+        }
+        .card1 .text1 {
+          padding: 0 20px 20px;
+        }
+    </style>
+      <main class="cards1">
+        <article class="card1">
+          <img src="/Prácticas Flexbox  y Grid/img/16959013724520.jpg" alt="Sample photo">
+          <div class="text1">
+            <h3>Herizo</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </article>
+        <article class="card1">
+          <img src="/Prácticas Flexbox  y Grid/img/descargar.jpg" alt="Sample photo">
+          <div class="text1">
+            <h3>Tigre</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </article>
+        <article class="card1">
+            <img src="/Prácticas Flexbox  y Grid/img/descargar (1).jpg" alt="Sample photo">
+            <div class="text1">
+              <h3>Leon</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </article>
+        <article class="card1">
+            <img src="/Prácticas Flexbox  y Grid/img/descargar (2).jpg" alt="Sample photo">
+            <div class="text1">
+              <h3>Ardilla</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </article>
+        </main>
+    <h3><a href="#titulo">Regresar</h3></a>
+    <hr>
+    <h1 id="ejemplo9">Ejemplo 9</h1>
+    <style>
+      .container3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .item2 {
+        width: 15%;
+        padding-bottom: 16%;
+        margin-bottom: 2%;
+        background-color: red;
+        border: 1px solid black; 
+        box-sizing: border-box;
+      }
+      .item3 {
+        width: 20%;
+        padding-bottom: 8%;
+        margin-bottom: 1%;
+        background-color: blue;
+        border: 1px solid black; 
+        box-sizing: border-box;
+      }
+    </style>
+      <div class="container3">
+      <div class="item1">
+        <div class="item3"></div>
+        <div class="item3"></div>
+        <div class="item3"></div>
+    </div>
+      <div class="item1"></div>
+      <div class="item1"></div>
+      <div class="item1"> 
+        <div class="item3"> <div class="item2"></div>
+        <div class="item2"></div>
+        <div class="item2"></div></div>
+        <div class="item3"></div>
+        <div class="item3"></div>
+    </div>   
+      <div class="item1"></div>
+      <div class="item1"></div>
+      <div class="item1"></div>
+      <div class="item1"></div>
+      </div>
+    <h3><a href="#titulo">Regresar</h3></a>
+    <hr>
+    <h1 id="ejemplo10">Ejemplo 10</h1>
+    <style>
+    .container4 {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-between;
+        height: 200px;
+      }
+      
+      .item4 {
+        width: 32%;
+        margin-bottom: 2%; /* (100-32*3)/2 */
+      }
+      
+      /* Re-order items into rows */
+      .item4:nth-child(3n+1) { order: 1; }
+      .item4:nth-child(3n+2) { order: 2; }
+      .item4:nth-child(3n)   { order: 3; }
+      
+      /* Force new columns */
+      .container4::before,
+      .container4::after {
+        content: "";
+        flex-basis: 100%;
+        width: 0;
+        order: 2;}
+    </style>
+    <div class="container4">
+        <div class="item4" style="background-color: #ff9999;">Elemento 1</div>
+        <div class="item4" style="background-color: #fff899;">Elemento 2</div>
+        <div class="item4" style="background-color: #2516d1;">Elemento 3</div>
+        <div class="item4" style="background-color: #998099ff;">Elemento 4</div>
+        <div class="item4" style="background-color: #9cff99;">Elemento 5</div>
+        <div class="item4" style="background-color: #9999ff;">Elemento 6</div>
+        <div class="item4" style="background-color: #ff99d1;">Elemento 7</div>
+        <div class="item4" style="background-color: #ff9999;">Elemento 8</div>
+        <div class="item4" style="background-color: #9cff99;">Elemento 9</div>
+      </div>
+      <h3><a href="#titulo">Regresar</h3></a>
+</body>
+</html>
